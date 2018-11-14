@@ -1,0 +1,109 @@
+\documentclass{hcij_article}
+
+\begin{document}
+
+% Change this to your title
+\articletitle{Title of Article}
+
+\runninghead{text}
+
+% Change this to your abstract text
+\articleabstract{Abstract text}
+
+\newpage
+
+\thickhrrule
+
+\tableofcontents
+
+\thickhrrule
+
+% Article body starts after this command
+\articlebodystart
+
+% Example table figure
+\begin{figure}[b]
+\caption{This is a table figure.}
+\begin{tabular}{cccc}
+\toprule
+Col title 1 & Col title 2 & Col title 3 & Col title 4 \\
+\midrule 
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+\bottomrule
+\end{tabular}
+\label{fig:testTablefigure}
+\end{figure}
+
+\section{Introduction}
+Body text
+
+\subsection{Level-2 heading}
+Body text
+
+\subsubsectionnonum{Level-3 Heading}
+Body text
+
+\paragraph{Level-4 Heading}
+This is an example citation \cite{Doe2014}. This is another citation with many authors \cite{Davis2007}.
+
+\subparagraph{Level-5 heading}
+Body text
+
+\section{Level-1 heading}
+Body text
+
+\subsection{Level-2 heading}
+Body text
+
+\subsubsectionnonum{Level-3 Heading}
+Body text
+
+\paragraph{Level-4 Heading}
+Body text
+
+\subparagraph{Level-5 heading}
+Body text
+
+% Example figure
+\begin{figure}[t]
+\caption{caption text}
+\includegraphics[width=2in]{exampleImage.png}
+\label{fig:testfigure}
+\end{figure}
+
+\articlebodyend
+
+\articlenotes{Notes text}
+
+% References
+\begingroup
+\raggedright
+\titleformat*{\section}{\bfseries\Large\centering\MakeUppercase}
+\bibliographystyle{apacite}
+\bibliography{articleMainDocument}
+\endgroup
+
+% Appendices
+\begin{appendices}
+\appendixsection{Level-1 heading}
+
+\appendixsubsection{Level-2 heading}
+Body text
+
+\appendixsubsection{Level-2 heading}
+Body text
+
+\appendixsubsubsection{Level-3 heading}
+Body text
+
+\appendixsection{Level-1 heading}
+
+\appendixsubsection{Level-2 heading}
+Body text
+
+\end{appendices}
+
+\end{document}
