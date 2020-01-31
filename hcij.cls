@@ -31,6 +31,7 @@
 \RequirePackage{apacite}
 \RequirePackage{tocloft}
 \RequirePackage{booktabs}
+\RequirePackage{float}
 
 \cftpagenumbersoff{section}
 \cftpagenumbersoff{subsection}
@@ -160,6 +161,13 @@
     \par
   \medskip{}
 }
+
+\newcommand{\titleeditorminibios}{%
+    \textbf{\large Editors' Mini-bios:}
+    \par
+  \medskip{}
+}
+
 \newcommand{\titlebackground}[1]{%
     \textbf{\emph{Background.}} #1
     \par
@@ -199,6 +207,14 @@
   \subsubsection*{#1}%
   \phantomsection\addcontentsline{toc}{subsubsection}{#1}}
   
+\newcommand\sectionnonum[1]{%
+  \section*{#1}%
+  \phantomsection\addcontentsline{toc}{section}{#1}}
+
+\newcommand\subsectionnonum[1]{%
+  \subsection*{#1}%
+  \phantomsection\addcontentsline{toc}{subsection}{#1}}
+
 \newcounter{appendixsscounter}
 
 \newcommand{\appendixsection}[1]{\vspace*{.05\textwidth}\begingroup\Large\bfseries%

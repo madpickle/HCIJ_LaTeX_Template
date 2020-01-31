@@ -1,0 +1,95 @@
+\documentclass{hcij}
+
+\begin{document}
+
+% Change this to your title
+\articletitle{Introduction to This Special Issue on [Title]}
+
+\authorlist{John Doe\textsuperscript{1}, Jane Doe\textsuperscript{1}, Pat Smith\textsuperscript{2}}
+
+\affiliationlist{\textsuperscript{1}Doe and Doe Consulting,\textsuperscript{2}University of Southern North Dakota at Hoople}
+
+\titleeditorminibios
+
+\miniauthorbio{John Doe}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+\miniauthorbio{Jane Doe}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+\miniauthorbio{Pat Smith}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+
+
+\newpage
+
+% Article body starts after this command
+\articlebodystart
+
+\sectionnonum{Introduction}
+Body text
+
+\subsectionnonum{Level-2 Heading}
+\textbf{John Jones} and \textbf{Jill Jackson} present...
+
+\subsubsectionnonum{Level-3 Heading}
+Body text
+
+\paragraph{Level-4 Heading}
+This is an example citation \cite{Doe2014}. This is another citation with many authors \cite{Davis2007}.
+
+\subparagraph{Level-5 heading}
+Body text
+
+\sectionnonum{Level-1 heading}
+Body text
+
+\subsectionnonum{Level-2 Heading}
+Body text
+
+\subsubsectionnonum{Level-3 Heading}
+Body text
+
+\paragraph{Level-4 Heading}
+Body text
+
+\subparagraph{Level-5 heading}
+Body text
+
+% Example table figure
+\begin{figure}[H]
+\caption{This is a table figure.}
+\begin{tabular}{cccc}
+\toprule
+Col title 1 & Col title 2 & Col title 3 & Col title 4 \\
+\midrule 
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+data 1 & data 2 & data 3 & data 4 \\
+\bottomrule
+\end{tabular}
+\label{fig:testTablefigure}
+\end{figure}
+
+% Example figure
+\begin{figure}[H]
+\caption{caption text}
+\includegraphics[width=2in]{exampleImage.png}
+\label{fig:testfigure}
+\end{figure}
+
+\articlebodyend
+
+\articlenotes{Notes text}
+
+\titlebackground{This article is based on...}
+\titleacknowledgments{We would like to thank...}
+
+% References
+\begingroup
+\raggedright
+\titleformat*{\section}{\bfseries\Large\centering\MakeUppercase}
+\bibliographystyle{apacite}
+\bibliography{hcij_example}
+\endgroup
+
+\end{document}
