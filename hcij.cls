@@ -4,7 +4,7 @@
 %% Written by Scott Carter
 %% 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{hcij_article}[2018/10/16 HCI Journal article template]
+\ProvidesClass{hcij}[2018/10/16 HCI Journal article template]
 \LoadClass[10pt,onecolumn]{article}
 
 \RequirePackage[title]{appendix}
@@ -32,6 +32,8 @@
 \RequirePackage{tocloft}
 \RequirePackage{booktabs}
 \RequirePackage{float}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[style=apa, backend=biber]{biblatex}
 
 \cftpagenumbersoff{section}
 \cftpagenumbersoff{subsection}
