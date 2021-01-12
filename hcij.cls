@@ -33,7 +33,8 @@
 \RequirePackage{booktabs}
 \RequirePackage{float}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[style=apa, backend=biber]{biblatex}
+%\RequirePackage[style=apa, backend=biber]{biblatex}
+\RequirePackage{apacite}
 
 \cftpagenumbersoff{section}
 \cftpagenumbersoff{subsection}
@@ -219,7 +220,7 @@
 
 \newcounter{appendixsscounter}
 
-\newcommand{\appendixsection}[1]{\vspace*{.05\textwidth}\begingroup\Large\bfseries%
+\newcommand{\appendixsection}[1]{\vspace*{.05\textwidth}\begingroup\normalfont\Large\bfseries%
 \setcounter{appendixsscounter}{0}
 \refstepcounter{section}%
 \addcontentsline{toc}{section}{\appendixname~\thesection.~~\texorpdfstring{\uppercase{#1}}{}}

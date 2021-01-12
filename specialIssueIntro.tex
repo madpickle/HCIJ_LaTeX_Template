@@ -1,5 +1,4 @@
 \documentclass{hcij}
-\bibliography{./hcij_example}
 
 \begin{document}
 
@@ -35,7 +34,7 @@ Body text
 Body text
 
 \paragraph{Level-4 Heading}
-This is an example citation \cite{Doe2014}. This is another citation with many authors \cite{Davis2007}.
+This is an example citation \cite{einstein}. This is another citation with many authors \cite{latexcompanion}.
 
 \subparagraph{Level-5 heading}
 Body text
@@ -89,7 +88,8 @@ data 1 & data 2 & data 3 & data 4 \\
 \begingroup
 \raggedright
 \titleformat*{\section}{\bfseries\Large\centering\MakeUppercase}
-\printbibliography
+\bibliographystyle{apacite}
+\bibliography{hcij_example}
 \endgroup
 
 \end{document}
