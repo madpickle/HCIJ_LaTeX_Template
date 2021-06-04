@@ -1,0 +1,39 @@
+\documentclass{hcij}
+
+\begin{document}
+
+\ctitle{Title of Article}
+
+\cauthorlist{John Doe\textsuperscript{1}, Jane Doe\textsuperscript{1}, Pat Smith\textsuperscript{2}}
+
+\caffiliationlist{\textsuperscript{1}Doe and Doe Consulting,\textsuperscript{2}University of Southern North Dakota at Hoople}
+
+\titleauthorminibios
+
+\miniauthorbio{John Doe}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+\miniauthorbio{Jane Doe}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+\miniauthorbio{Pat Smith}{email}{url}{is a \emph{discipline} with an interest in \emph{interests}; she/he is a \emph{position/title} in the \emph{department/group} of \emph{institution/company}.}
+
+This first paragraph should cite the target article(s) and give a 1-to-3-sentence summary of the main point of the Commentary. 
+
+\subsectionnonum{Level-2 Heading}
+The body text goes here. Note that there should be no more than 5 references \cite{dirac}.
+
+% References
+\begingroup
+\raggedright
+\titleformat*{\section}{\bfseries\Large\MakeUppercase}
+\bibliographystyle{apacite}
+\bibliography{hcij_example}
+\endgroup
+
+% Example figure
+\begin{figure}[h]
+\caption{A small number of figures are allowed in commentaries}
+\includegraphics[width=2in]{exampleImage.png}
+\label{fig:testfigure}
+\end{figure}
+
+\end{document}

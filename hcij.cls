@@ -97,11 +97,25 @@
   \medskip{}
 }
 
+\newcommand{\ctitle}[1]{%
+  \noindent
+    \textbf{\huge Commentary: #1}
+    \par
+  \medskip{}
+}
+
 \newcommand{\authorlist}[1]{%
   \begin{center}
     \textbf{\large #1}
     \par
   \end{center}
+  \medskip{}
+}
+
+\newcommand{\cauthorlist}[1]{%
+  \noindent
+    \textbf{\large #1}
+    \par
   \medskip{}
 }
 
@@ -113,7 +127,15 @@
   \medskip{}
 }
 
+\newcommand{\caffiliationlist}[1]{%
+  \noindent
+    \emph{\large #1}
+    \par
+  \medskip{}
+}
+
 \newcommand{\miniauthorbio}[4]{%
+  \noindent
     \textbf{#1} (#2, #3) #4
     \par
   \medskip{}
@@ -160,42 +182,51 @@
 }
 
 \newcommand{\titleauthorminibios}{%
+  \begin{flushleft}
     \textbf{\large Authors' Mini-bios:}
     \par
+  \end{flushleft}
   \medskip{}
 }
 
 \newcommand{\titleeditorminibios}{%
+  \begin{flushleft}
     \textbf{\large Editors' Mini-bios:}
     \par
+  \end{flushleft}
   \medskip{}
 }
 
 \newcommand{\titlebackground}[1]{%
+  \noindent
     \textbf{\emph{Background.}} #1
     \par
   \medskip{}
 }
 
 \newcommand{\titleacknowledgments}[1]{%
+  \noindent
     \textbf{\emph{Acknowledgements.}} #1
     \par
   \medskip{}
 }
 
 \newcommand{\titlefunding}[1]{%
+  \noindent
     \textbf{\emph{Funding.}} #1
     \par
   \medskip{}
 }
 
 \newcommand{\titlesupplementarydata}[1]{%
+  \noindent
     \textbf{\emph{Supplementary Data.}} #1
     \par
   \medskip{}
 }
 
 \newcommand{\titlehcieditorialrecord}[1]{%
+  \noindent
     \textbf{\emph{HCI Editorial Record.}} #1
     \par
   \medskip{}
